@@ -1,34 +1,35 @@
 <template>
     <div class="wrapper">
-        <header4 title="购物车" :rightBtn="rightBtn"></header4>
-        <div class="slogan" @click="jump2($event,'true')">
-            <text class="i-slg iconfont">&#xe63a; 30天无忧退换货</text>
-            <text class="i-slg iconfont">&#xe63a; 48小时快速退款</text>
-            <text class="i-slg iconfont">&#xe63a; 满88元免邮费</text>
-        </div>
+        
         <scroller class="main-list" offset-accuracy="300px">
             <refresher></refresher>
-            <div class="shop-cart">
-                <div v-if="!goodList || goodList.length<=0" class="cart-empty">
-                    <image class="img-empty" resize="contain" src="http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/icon-normal/noCart-a8fe3f12e5.png"></image>
-                    <text class="txt-empty">去添加点什么吧</text>
-                </div>
+            
+    <div style="flex-direction:row;border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:#ffda44;aligin-items:center;">
+        <image style="width: 60px;height: 60px;flex:1" src="https://sukura7.github.io/vue-xianyu-demo/static/1.png"></image>
+
+        <div style="flex:6;flex-direction:cloum;height:80px;">
+            <text style="font-size:22px;padding:5px;">通知</text>
+            <text style="color:#888;padding:5px;font-size:18px;">咸鱼奇葩说|18分钟前</text>
+
+        </div>
             </div>
-            <block-3 :goods="goods3"></block-3>
         </scroller>
     </div>
 </template>
 <style scoped>
-
+body{
+    background-color: white;
+}
     .iconfont {
         font-family:iconfont;
     }
     .wrapper{
-        background-color: #f4f4f4;
+        background-color: white;
     }
     .main-list{
-        margin-top: 170px;
         margin-bottom: 90px;
+        background-color: white;
+
     }
     .slogan{
         position: absolute;

@@ -5,7 +5,11 @@
             <div class="i-good" v-for="i in goods">
                 <text class="gd-tlt">{{i.tlt}}</text>
                 <text class="gd-info">{{i.info}}</text>
-                <text class="gd-info">{{i.notice}}</text>
+                <div style="flex-direction:row">
+                <text class="gd-notice">公告</text>
+                <text class="gd-info">  {{i.notice}}</text>
+                    
+                </div>
 
                 <div style="flex-direction:row;height:60px;">
                  <image class="gd-img" resize="cover" :src="i.img1"></image>
@@ -71,7 +75,7 @@
     }
     .box{
         width: 750px;
-        height: 500px;
+        height: 400px;
         padding-top: 30px;
         padding-bottom: 30px;
         padding-left: 15px;
@@ -87,7 +91,7 @@
         background-color: #f4f4f4;
     }
     .gd-tlt{
-
+        padding:10px; 
         font-size: 28px;
         color:#333;
         width: 286px;
@@ -98,6 +102,7 @@
         text-overflow: ellipsis;
     }
     .gd-info{
+        padding:10px; 
         display: block;
         font-size: 24px;
         width: 286px;
@@ -108,14 +113,27 @@
         white-space: nowrap;
         text-overflow: ellipsis;
     }
+     .gd-notice{
+     border-width: 1px;
+     border-style:  solid;
+     border-color:  #7dc5eb;
+    font-size: 30px;
+    line-height: 40px;
+
+    vertical-align: middle;
+    box-sizing: border-box;
+     color: #7dc5eb; 
+     }
     .gd-price{
+        text-align: center;
         font-size: 28px;
         width: 286px;
         margin-top: 16px;
-        color:#b4282d;
+
         overflow: hidden;
         lines:1;
         flex-direction: row;
+        justify-content: center;
         white-space: nowrap;
         text-overflow: ellipsis;
     }
@@ -133,7 +151,7 @@
 </style>
 <script>
     var navigator = weex.requireModule('navigator')
-    import util from '../../src/assets/util';
+    import util from '../../../src/assets/util';
     export default {
         props:["head","hasMore","goods"],
         data () {

@@ -87,10 +87,11 @@
     import Block1 from '../components/Block1.vue';
     import Block2 from '../components/Block2.vue';
     import Block3 from '../components/Block3.vue';
-    import BannerGoodsBox from '../components/BannerGoodsBox.vue';
-    import HomeClassify from '../components/HomeClassify.vue';
-    import HomeGoodsList from '../components/HomeGoodsList.vue';
-    import HomeBottomScroller from '../components/HomeBottomScroller.vue';
+    import BannerGoodsBox from '../components/Home/BannerGoodsBox.vue';
+    import HomeClassify from '../components/Home/HomeClassify.vue';
+    import HomeGoodsList from '../components/Home/HomeGoodsList.vue';
+    import HomeBottomScroller from '../components/Home/HomeBottomScroller.vue';
+
 
     export default {
         components: {
@@ -106,6 +107,7 @@
             'home-goods-list' : HomeGoodsList,
 
             'home-bottom-scroller' : HomeBottomScroller,
+
         },
         data () {
             return {
