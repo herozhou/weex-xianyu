@@ -4,13 +4,13 @@
             <div class="loginhead">
                 <div class="flex border">
                     <div class="flexprimary">
-                        <div class="name"><text>马化云</text></div>
+                        <div class="name"><text >马化云</text></div>
                         <div class="somedesc">
-                            <text style="font-size:13px">虽然没挣到钱，但在闲鱼开心就好</text>
+                            <text style="font-size:12px;color:#888">虽然没挣到钱，但在闲鱼开心就好</text>
                         </div>
                     </div>
                     <div class="useravatar" >
-        <image style="width: 60px;height: 60px;" src="https://sukura7.github.io/vue-xianyu-demo/static/1.png"></image>
+        <image style="width: 60px;height: 60px;" src="https://sukura7.github.io/vue-xianyu-demo/static/avatar.jpg"></image>
 
                     </div>
                 </div>
@@ -178,8 +178,8 @@ text-align: center;
 .border:after {
     content: '';
     display: inline-block;
-    height: 15px;
-    width: 15px;
+    height: 8px;
+    width: 8px;
     border-width: 2px 2px 0 0;
     border-color:#999;
     border-style: solid;
@@ -190,9 +190,9 @@ text-align: center;
 .flexprimary {
     flex:1;
 }
-.flexprimary .name{
+.flexprimary .name p{
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 900;
 } 
 .flexprimary .somedesc{
     font-size: 20px;
@@ -288,8 +288,8 @@ text-align: center;
 .item:after {
     content: '';
     display: inline-block;
-    height: 15px;
-    width: 15px;
+    height: 8px;
+    width: 8px;
     border-width: 2px 2px 0 0;
     border-color:#999;
     border-style: solid;

@@ -2,7 +2,7 @@
     <div class="wrapper">
 
         <scroller class="box" scroll-direction="horizontal" flex-direction="row" show-scrollbar=false>
-            <div class="i-good" v-for="i in goods">
+            <div class="i-good" v-for="i in goods" >
                 <text class="gd-tlt">{{i.tlt}}</text>
                 <text class="gd-info">{{i.info}}</text>
                 <div style="flex-direction:row">
@@ -167,7 +167,8 @@
                     url: util.setBundleUrl(url, 'page/web.js?weburl='+_url) ,
                     animated: "true"
                 });
-            }
+            },
+           
         }
     }
 </script>

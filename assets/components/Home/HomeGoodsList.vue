@@ -16,7 +16,7 @@
         </div>
 
         <div class="home-goods-list">
-                <div class="home-goods-item">
+                <div class="home-goods-item" @click="jump">
                         <div class="home-goods-item-header" style="display:flex;flex-direction:row">
                             <image style="width: 30px;height: 30px;flex:1" src="https://sukura7.github.io/vue-xianyu-demo/static/1.png"></image>
                             <div style="flex:8">
@@ -159,6 +159,9 @@
                         this.isLeftTab=false;
 
                 }
+            },
+             jump(){
+                this.$router.push('goodsdetail')
             }
         }
     }
