@@ -14,6 +14,7 @@ import ChatList from '../assets/components/Pages/ChatList.vue'
 
 import Pay from '../assets/components/Pages/Pay.vue'
 import Addr from '../assets/components/Pages/Addr.vue'
+import Category from '../assets/components/Pages/Category.vue'
 
 Vue.use(Router)
 
@@ -31,6 +32,7 @@ export default new Router({
         { path: '/pay', component: Pay },
         { path: '/addr', component: Addr },
         { path: '/chatlist', component: ChatList },
+        { path: '/category', component: Category },
 
         
 
