@@ -8,7 +8,10 @@
 
 ![](https://github.com/Sukura7/vue-ali-xianyu/raw/master/demoimg/login.gif)
 
+#正在开发中，感兴趣的朋友点下watch。想要体验的朋友也可以fork直接运行体验，会尽快开发出完整版。
+
 > 以下是运行demo的简要步骤
+
 
 # 运行
 ## 安装依赖包
