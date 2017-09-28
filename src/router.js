@@ -16,7 +16,7 @@ import Pay from '../assets/components/Pages/Pay.vue'
 import Addr from '../assets/components/Pages/Addr.vue'
 import Category from '../assets/components/Pages/Category.vue'
 
-import MyPublish from '../assets/components/Pages/MyPublish.vue'
+import MyPublish from '../assets/components/My/MyPublish.vue'
 
 Vue.use(Router)
 
