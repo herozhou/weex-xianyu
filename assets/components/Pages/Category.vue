@@ -34,8 +34,8 @@ export default {
 	methods: {
 		selecteItem () {
 			// let oUrl = event.currentTarget.dataset.url
-			//   this.title = event.currentTarget.dataset.name
-		 //      this.selected = oUrl
+			  // this.title = event.currentTarget.dataset.name
+		      // this.selected = oUrl
 		 //      if(document.querySelector('.selected'))  {
 		 //        document.querySelector('.selected').classLis5pxove('selected')
 		 //      }
@@ -184,6 +184,10 @@ export default {
 }
 </script>
 <style lang="css" scoped>
+.body{
+	background-color: white;
+	
+}
 .nav {
 	width: 100px;
 	flex-direction: column;
